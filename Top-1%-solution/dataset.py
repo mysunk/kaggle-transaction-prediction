@@ -35,8 +35,8 @@ def load_data(data_path):
     return train, test
 
 
-def get_data():
-    train_data, test_data = load_data('data/')
+def get_data(data_path):
+    train_data, test_data = load_data(data_path)
 
     y = train_data["target"]
     X = train_data.drop(["ID_code", "target"], axis=1)
